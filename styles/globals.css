@@ -1,0 +1,64 @@
+:root{
+    --color-primary: #01b636;
+    --color-dark-orange: #d0f9df;
+    --color-gry: #888888;
+    --color-light-green:#b1cc47;
+    --color-light-border:#a4a3a3;
+    --color-black: #000;
+    --color-bg: #eeeeee;
+    --color-white: rgb(255, 255, 255);
+    --transition: all 400ms ease;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    line-height: 25px;
+    color: var(--color-gry);
+    font-weight: 540;
+}
+
+ul, ol{
+        line-height: 30px;
+        color: var(--color-gry);
+        font-weight: 540;
+        list-style-position: inside;
+}
+.flex_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    width: 100vw;
+    font-family: 'Oswald', sans-serif;
+    background-color: var(--color-bg);
+    overflow-x:hidden;
+}
+
+button{
+    width: 120px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(0deg, #00c03a 0%, #4fe885 49%, #01b636 100%);
+    font-size: 16px;
+    font-weight: 550;
+    color: var(--color-white);
+    margin-top: 20px;
+}
+
+button:hover{
+    background: linear-gradient(0deg,  #c4c0c0 0%, #ffffff 49%, #c4c0c0 100%);
+    color: var(--color-primary);
+    border: var(--color-primary) solid 2px;
+    transition: all 400ms;
+}
+
+button:active{
+    background: linear-gradient(0deg, #00c03a 0%, #4fe885 49%, #01b636 100%);
+    color: var(--color-white);
+}
+
