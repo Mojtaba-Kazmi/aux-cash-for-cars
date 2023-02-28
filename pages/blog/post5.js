@@ -6,7 +6,7 @@ import Massage from "@/components/Message";
 import styles from "@/styles/BlogsPosts.module.css";
 import Sharing from "@/styles/Sharing.module.css";
 
-import postImage from "@/public/images/Lifespan-of-a-Car.jpg";
+import postImage from "@/public/images/lifespan-of-a-car.jpg";
 import Link from "next/link";
 
 import {
