@@ -21,9 +21,10 @@ function contact() {
         <meta property='og:title' content='Contact Us - Aux Cash For Cars' />
         <meta property='og:description' content={`Fill out the form  and one of our Car Removal specialists will give you a call. Alternatively you may call us free on ${<a href='tel:0469798540' title='Click here to make a call'>0469798540</a>}`} />
       </Head>
+
       <div className={styles.contactContainer}>
 
-        <div className={styles.section1}>
+        <section className={styles.section1}>
           <div className={styles.section1Left}>
             <h1>Contact Us</h1>
             <p>Your professional and friendly scrap metal recyclers.</p>
@@ -34,13 +35,14 @@ function contact() {
           <div className={styles.section1Right}>
               <Image
               src={contactPic}
+              alt=" "
               width= "300"
               height="300"
               />
           </div>
-        </div>
+        </section>
 
-        <div className={styles.section2}>
+        <section className={styles.section2}>
           <div className={styles.section2Left}>
             <div>
               <h2>
@@ -63,7 +65,7 @@ function contact() {
           </div>
 
           <div className={styles.section2Right}>
-            <form action='https://formspree.io/f/mknaoepd' method="POST" >
+            <form action='https://formspree.io/f/meqwkezw' method="POST" >
 
               <div className={styles.names}>
                 <div>
@@ -100,7 +102,7 @@ function contact() {
               <button type='submit'>Submit</button>
             </form>
           </div>
-        </div>
+        </section>
       </div>
     </>
   )

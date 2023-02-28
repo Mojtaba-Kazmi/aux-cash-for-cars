@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 import Massage from "@/components/Message"
 import styles from '@/styles/BlogsPosts.module.css'
-import Global from '@/styles/Global.module.css'
+import Sharing from '@/styles/Sharing.module.css'
 
 import postImage from '@/public/images/Lifespan-of-a-Car.jpg'
 import Link from 'next/link'
@@ -47,10 +47,10 @@ function post5() {
         <div className={styles.imageContainer}>
           <Image
           width={1000}
-          hei=  {1000}
+          height={1000}
           src = {postImage}
           title='Picking up damaged car'
-          alt="picking up and removing damaged cars"
+          alt="life span of a car"
           />
         </div>
         <h1 className={styles.postTitle}>
@@ -87,9 +87,9 @@ function post5() {
           <div className={styles.date}>
               <p>17 Feb 2023</p>
           </div>
-          <div className={Global.flex}>
+          <div className={Sharing.flex}>
             <div className={styles.backButton} ><Link href={"/blog"}>Go Back</Link></div>
-            <div className={Global.socialIconBox}>
+            <div className={Sharing.socialIconBox}>
                   <FacebookShareButton
                     url={'/blog/post5'}
                     quote={"Depends on a number of factors, including the make and model of the vehicle, how well it is maintained, and the driving habits of the owner. In general, however, most cars have a lifespan of about 10 years or 150,000 miles, whichever comes first."}

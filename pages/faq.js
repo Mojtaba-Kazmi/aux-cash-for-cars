@@ -16,6 +16,7 @@ function frequentlyQuestion() {
           
           <mata name="robots" content="index, follow"/>
       </Head>
+
       <div className={styles.faqContainer}>
       <h1 className={styles.faqTitle}>Frequently asked questions</h1>
 
@@ -79,16 +80,11 @@ function frequentlyQuestion() {
             </p>
           </div>
 
-          
-
         </div>
-
 
         <div className={styles.faqR}>
           <Message />
         </div>
-          
-
       </div>
     </div>
     </>

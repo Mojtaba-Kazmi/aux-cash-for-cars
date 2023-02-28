@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 import Massage from "@/components/Message"
 import styles from '@/styles/BlogsPosts.module.css'
-import Global from '@/styles/Global.module.css'
+import Sharing from '@/styles/Sharing.module.css'
 
 import postImage from '@/public/images/broken-down-cars.jpg'
 import Link from 'next/link'
@@ -47,10 +47,10 @@ function post9() {
         <div className={styles.imageContainer}>
           <Image
           width={1000}
-          hei=  {1000}
+          height={1000}
           src = {postImage}
           title='Picking up damaged car'
-          alt="picking up and removing damaged cars"
+          alt="cash for old car"
           />
         </div>
         <h1 className={styles.postTitle}>
@@ -67,7 +67,7 @@ function post9() {
             Junk car removal companies specialize in buying old, useless cars and then  
             either recycling them or selling them for parts. This is a great option if you 
             want to get rid of your car quickly and without hassle. Read on to learn more 
-            about <Link className={Global.link} href={'/howItWorks'}>how junk car removal works</Link> and <Link className={Global.link} href={'/blog/post4'}>how to find the best companies near you</Link>.
+            about <Link className={Sharing.link} href={'/howItWorks'}>how junk car removal works</Link> and <Link className={Sharing.link} href={'/blog/post4'}>how to find the best companies near you</Link>.
           </p>
           <h2>What Is Junk Car Removal?</h2>
           <p>
@@ -76,7 +76,7 @@ function post9() {
             off your hands and either recycle the materials or sell the car for parts.
           </p>
           <p>
-            The process is usually very simple. You <Link className={Global.link} href={'/contact'}>contact</Link> the company and let them know 
+            The process is usually very simple. You <Link className={Sharing.link} href={'/contact'}>contact</Link> the company and let them know 
             that you have a car that you want to sell. They will give you a quote based on 
             the make, model, and condition of the car. If you accept the quote, they will 
             come to pick up the car and take it away.
@@ -87,14 +87,14 @@ function post9() {
           </p>
           <h2>Why Use Junk Car Removal Services?</h2>
           <p>
-            There are a few reasons you might want to use junk car removal <Link className={Global.link} href={'/services'}>services</Link> rather  
+            There are a few reasons you might want to use junk car removal <Link className={Sharing.link} href={'/services'}>services</Link> rather  
             than trying to sell the car yourself.
           </p>
           <p>
             For one, it's much easier. You don't have to worry
           </p>
           <p>
-            If you're looking for a junk car removal company near you, <Link className={Global.link} href={'/'}>AUX Cash for Car Sydney</Link> is
+            If you're looking for a junk car removal company near you, <Link className={Sharing.link} href={'/'}>AUX Cash for Car Sydney</Link> is
              a quality top junk car buyer. We can buy your car wherever you are 
             in Sydney.
           </p>
@@ -102,9 +102,9 @@ function post9() {
           <div className={styles.date}>
               <p>17 Feb 2023</p>
           </div>
-          <div className={Global.flex}>
+          <div className={Sharing.flex}>
             <div className={styles.backButton} ><Link href={"/blog"}>Go Back</Link></div>
-            <div className={Global.socialIconBox}>
+            <div className={Sharing.socialIconBox}>
                   <FacebookShareButton
                     url={'/blog/post9'}
                     quote={"Junk car removal companies specialize in buying old, useless cars and then either recycling them or selling them for parts. This is a great option if you want to get rid of your car quickly and without hassle. Read on to learn more about how junk car removal works "}

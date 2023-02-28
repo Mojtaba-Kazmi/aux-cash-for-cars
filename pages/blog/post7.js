@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 import Massage from "@/components/Message"
 import styles from '@/styles/BlogsPosts.module.css'
-import Global from '@/styles/Global.module.css'
+import Sharing from '@/styles/Sharing.module.css'
 
 import postImage from '@/public/images/broken-down-cars.jpg'
 import Link from 'next/link'
@@ -45,10 +45,10 @@ function post7() {
         <div className={styles.imageContainer}>
           <Image
           width={1000}
-          hei=  {1000}
+          height={1000}
           src = {postImage}
           title='Picking up damaged car'
-          alt="picking up and removing damaged cars"
+          alt="selling damaged cars"
           />
         </div>
         <h1 className={styles.postTitle}>
@@ -73,7 +73,7 @@ function post7() {
               title and registration.
             </li>
             <li>
-              Determine a <Link className={Global.link} href={'/blog/post3'}>fair price</Link> for the car.
+              Determine a <Link className={Sharing.link} href={'/blog/post3'}>fair price</Link> for the car.
             </li>
             <li>
               Write up a bill of sale and have both parties sign it.
@@ -89,9 +89,9 @@ function post7() {
           <div className={styles.date}>
               <p>17 Feb 2023</p>
           </div>
-          <div className={Global.flex}>
+          <div className={Sharing.flex}>
             <div className={styles.backButton} ><Link href={"/blog"}>Go Back</Link></div>
-            <div className={Global.socialIconBox}>
+            <div className={Sharing.socialIconBox}>
                   <FacebookShareButton
                     url={'/blog/post7'}
                     quote={"The following steps are a guide you can follow if you want to sell your car to a relative. Once you have followed these steps, you are good to go!"}

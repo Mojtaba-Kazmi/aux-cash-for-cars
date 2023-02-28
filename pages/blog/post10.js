@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 import Massage from "@/components/Message"
 import styles from '@/styles/BlogsPosts.module.css'
-import Global from '@/styles/Global.module.css'
+import Sharing from '@/styles/Sharing.module.css'
 
 import postImage from '@/public/images/broken-down-cars.jpg'
 import Link from 'next/link'
@@ -45,10 +45,10 @@ function post10() {
         <div className={styles.imageContainer}>
           <Image
           width={1000}
-          hei=  {1000}
+          height={1000}
           src = {postImage}
           title='Picking up damaged car'
-          alt="picking up and removing damaged cars"
+          alt="selling junk cars laws"
           />
         </div>
         <h1 className={styles.postTitle}>
@@ -59,12 +59,12 @@ function post10() {
               When you've finally come to the decision that it's time to sell your junk   
               car, it's essential to be aware of the laws and regulations that govern the 
               process. This will help ensure that everything goes smoothly and you get the 
-              most for your car. The first step is to <Link className={Global.link} href={'/blog/post4'}>find a reputable junk car removal 
+              most for your car. The first step is to <Link className={Sharing.link} href={'/blog/post4'}>find a reputable junk car removal 
               company</Link>. There are many companies that will pay cash for junk cars, but it's 
               important to find one that is licensed and insured. As one of the leading 
-              junk car buyers near you, <Link className={Global.link} href={'/'}>AUX Cash for Car</Link> is one of the top companies in 
+              junk car buyers near you, <Link className={Sharing.link} href={'/'}>AUX Cash for Car</Link> is one of the top companies in 
               the industry. So, if you're looking for someone to buy your old junk car, you 
-              know who to call: <Link className={Global.link} href={'/contact'}>AUX Cash for Car</Link>. We'll even make you an offer you won't 
+              know who to call: <Link className={Sharing.link} href={'/contact'}>AUX Cash for Car</Link>. We'll even make you an offer you won't 
               refuse! Regardless of where you are in Sydney, we are able to buy your car.
           </p>
           <p>
@@ -82,9 +82,9 @@ function post10() {
           <div className={styles.date}>
               <p>17 Feb 2023</p>
           </div>
-          <div className={Global.flex}>
+          <div className={Sharing.flex}>
             <div className={styles.backButton} ><Link href={"/blog"}>Go Back</Link></div>
-            <div className={Global.socialIconBox}>
+            <div className={Sharing.socialIconBox}>
                   <FacebookShareButton
                     url={'/blog/post10'}
                     quote={"it's essential to be aware of the laws and regulations that govern the process. This will help ensure that everything goes smoothly and you get the most for your car."}

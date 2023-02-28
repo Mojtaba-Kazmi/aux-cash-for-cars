@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 import Massage from "@/components/Message"
 import styles from '@/styles/BlogsPosts.module.css'
-import Global from '@/styles/Global.module.css'
+import Sharing from '@/styles/Sharing.module.css'
 
 import postImage from '@/public/images/broken-down-cars.jpg'
 import Link from 'next/link'
@@ -44,10 +44,10 @@ function post1() {
         <div className={styles.imageContainer}>
           <Image
           width={1000}
-          hei=  {1000}
+          height={1000}
           src = {postImage}
           title='Picking up damaged car'
-          alt="picking up and removing damaged cars"
+          alt="who buys broken-down cars"
           />
         </div>
         <h1 className={styles.postTitle}>
@@ -64,19 +64,19 @@ function post1() {
             that we will pick up your car for free. It’s FREE!
           </p>
           <p>
-            <Link className={Global.link} href={'/'}>AUX Cash for Car Sydney</Link> is a quality top junk car buyer. We can buy your car 
+            <Link className={Sharing.link} href={'/'}>AUX Cash for Car Sydney</Link> is a quality top junk car buyer. We can buy your car 
               wherever you are in the Sydney. Our employees will come to you, 
               whether you are at home or at the office. The process is transparent and 
               convenient. If you find yourself asking, “Who buys the broken-down-cars?” 
-              Visit our <Link className={Global.link} href={'/'}>website</Link> and you will find out. We don’t offer lowball prices. 
+              Visit our <Link className={Sharing.link} href={'/'}>website</Link> and you will find out. We don’t offer lowball prices. 
               That’s because we want to be fair to our customers.
           </p>
           <p className={styles.date}>14 Feb 2023</p>
-          <div className={Global.postFooter}>
+          <div className={Sharing.postFooter}>
 
             <div className={styles.backButton} ><Link href={"/blog"}>Go Back</Link></div>
 
-            <div className={Global.socialIconBox}>
+            <div className={Sharing.socialIconBox}>
               <FacebookShareButton
                 url={'/blog/post1'}
                 quote={'You can sell your broken down car to us for good cash. In addition, since it is a car that does not work, you will have to pay to toll on it. The good news is that we will pick up your car for free. It’s FREE!'}

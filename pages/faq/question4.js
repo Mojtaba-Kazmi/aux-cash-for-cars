@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import Message from '@/components/Message'
 import styles from '@/styles/Question.module.css'
-import Global from '@/styles/Global.module.css'
+import Sharing from '@/styles/Sharing.module.css'
 
 function question4() {
   return (
@@ -32,7 +32,7 @@ function question4() {
                 representing how much your vehicle is. Therefore, we cannot say exactly how
                  much you'll get there unless we hear more details about your vehicle's 
                  type and condition. With this information, we can determine a far more accurate
-                  offer for you, so please don't hesitate to reach out and <Link href={'/contact'} className={Global.link}>provide us with your vehicle's information</Link>.
+                  offer for you, so please don't hesitate to reach out and <Link href={'/contact'} className={Sharing.link}>provide us with your vehicle's information</Link>.
             </p>
             
         </div>

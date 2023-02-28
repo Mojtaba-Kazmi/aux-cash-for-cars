@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import Message from '@/components/Message'
 import styles from '@/styles/Question.module.css'
-import Global from '@/styles/Global.module.css'
+import Sharing from '@/styles/Sharing.module.css'
 
 function question2() {
   return (
@@ -25,7 +25,7 @@ function question2() {
         <div className={styles.questionContainer}>
             <h1>What kind of cars does AUX Cash for Car buy?</h1>
             <p>
-              <Link className={Global.link} href={'/'}>AUX Cash for Car</Link> will purchase damaged vehicles of any type, including vehicles 
+              <Link className={Sharing.link} href={'/'}>AUX Cash for Car</Link> will purchase damaged vehicles of any type, including vehicles 
                 with physical, electrical or mechanical damage as well as vehicles with high mileage.
                 We're even experienced with buying luxury, exotic and classic cars. AUX Cash for 
                 Car is able to offer competitive prices for damaged vehicles because we have the 

@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 import Massage from "@/components/Message"
 import styles from '@/styles/BlogsPosts.module.css'
-import Global from '@/styles/Global.module.css'
+import Sharing from '@/styles/Sharing.module.css'
 
 import postImage from '@/public/images/flood-damaged-car.jpg'
 import Link from 'next/link'
@@ -46,10 +46,10 @@ function post6() {
         <div className={styles.imageContainer}>
           <Image
           width={1000}
-          hei=  {1000}
-          src = {postImage}
+          height={1000}
+          src={postImage}
           title='Picking up damaged car'
-          alt="picking up and removing damaged cars"
+          alt="sell flood-damaged cars legally"
           />
         </div>
         <h1 className={styles.postTitle}>
@@ -88,9 +88,9 @@ function post6() {
           <div className={styles.date}>
               <p>17 Feb 2023</p>
           </div>
-          <div className={Global.flex}>
+          <div className={Sharing.flex}>
             <div className={styles.backButton} ><Link href={"/blog"}>Go Back</Link></div>
-            <div className={Global.socialIconBox}>
+            <div className={Sharing.socialIconBox}>
                   <FacebookShareButton
                     url={'/blog/post6'}
                     quote={"Selling a flood damaged car can be a bit of a hassle, but as long as you are honest about the condition of the car, you should be able to sell it without any problems."}

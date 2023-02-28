@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 import Massage from "@/components/Message"
 import styles from '@/styles/BlogsPosts.module.css'
-import Global from '@/styles/Global.module.css'
+import Sharing from '@/styles/Sharing.module.css'
 
 import postImage from '@/public/images/car.jpg'
 import Link from 'next/link'
@@ -48,10 +48,10 @@ function post2() {
         <div className={styles.imageContainer}>
           <Image
           width={1000}
-          hei=  {1000}
+          height={1000}
           src = {postImage}
           title='Picking up damaged car'
-          alt="picking up and removing damaged cars"
+          alt="replace your old car"
           />
         </div>
         <h1 className={styles.postTitle}>Cars to Get Rid of: Signs you need a replacement one</h1>
@@ -86,9 +86,9 @@ function post2() {
              rusted appearance.
           </p>
           <p className={styles.date}>17 Feb 2023</p>
-          <div className={Global.flex}>
+          <div className={Sharing.flex}>
             <div className={styles.backButton} ><Link href={"/blog"}>Go Back</Link></div>
-            <div className={Global.socialIconBox}>
+            <div className={Sharing.socialIconBox}>
                   <FacebookShareButton
                     url={'/blog/post2'}
                     quote={"lead-acid batteries and lubricating oils in old cars pose a health risk. Used vehicles have damaged parts that are dangerous for people. As a car ages, its repair bills tend to increase. read on to learn signs it’s time to replace it."}

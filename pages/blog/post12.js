@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 import Massage from "@/components/Message"
 import styles from '@/styles/BlogsPosts.module.css'
-import Global from '@/styles/Global.module.css'
+import Sharing from '@/styles/Sharing.module.css'
 
 import postImage from '@/public/images/broken-down-cars.jpg'
 import Link from 'next/link'
@@ -46,10 +46,10 @@ function post12() {
         <div className={styles.imageContainer}>
           <Image
           width={1000}
-          hei=  {1000}
+          height={1000}
           src = {postImage}
           title='Picking up damaged car'
-          alt="picking up and removing damaged cars"
+          alt="junk car removal services"
           />
         </div>
         <h1 className={styles.postTitle}>
@@ -89,15 +89,15 @@ function post12() {
             your car will be disposed of in a safe and environmentally friendly manner. The 
             process is quick and easy, and you'll even receive cash for your car. So, if 
             you're looking to get rid of an old car, be sure to use a professional junk car 
-            removal service near you like <Link className={Global.link} href={'/'}>AUX Cash for Car Sydney</Link>.
+            removal service near you like <Link className={Sharing.link} href={'/'}>AUX Cash for Car Sydney</Link>.
           </p>
           
           <div className={styles.date}>
               <p>17 Feb 2023</p>
           </div>
-          <div className={Global.flex}>
+          <div className={Sharing.flex}>
             <div className={styles.backButton} ><Link href={"/blog"}>Go Back</Link></div>
-            <div className={Global.socialIconBox}>
+            <div className={Sharing.socialIconBox}>
                   <FacebookShareButton
                     url={'/blog/post12'}
                     quote={"If you're looking to get rid of an old car, it's important to find a professional junk car removal service near you. There are many benefits to using a professional junk car removal service, including:"}

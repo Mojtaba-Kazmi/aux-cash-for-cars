@@ -44,12 +44,12 @@ function Header() {
 
   return (
     <div  className={styles.header}>
-      <div className={styles.headerSection1}>
+      <section className={styles.headerSection1}>
         <Link href="/" className = 'header_right' onClick={closeMobileMenu}>
           <Image
           src={mypic}
           title="AUX cash for car logo"
-          alt="cash for car, car removal - logo"
+          alt="cash for car, car removal - Home"
           width="100"
           height="100"
           />
@@ -67,8 +67,8 @@ function Header() {
         
         {/* ----------------------- */}
          <div className={styles.mobile_buttons} onClick={handleclick}>{click ? <AiOutlineClose /> : <AiOutlineMenu /> }</div>
-      </div>
-        <div className={click ? styles.headerSection2: styles.headerSection3} onClick={closeMobileMenu}><Navbar /></div>
+      </section>
+      <section className={click ? styles.headerSection2: styles.headerSection3} onClick={closeMobileMenu}><Navbar /></section>
     </div>
   )
 }

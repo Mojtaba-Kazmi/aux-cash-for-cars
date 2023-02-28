@@ -14,11 +14,10 @@ import postImage5 from '@/public/images/lifespan-of-a-car.jpg'
 import postImage6 from '@/public/images/flood-damaged-car.jpg'
 
 import styles from "@/styles/Blog.module.css"
-import Global from '@/styles/Global.module.css'
+import Sharing from '@/styles/Sharing.module.css'
 import Head from 'next/head';
 
 function blog() {
-  
   const [nextSlide,setNextSlide] = useState("0%");
 
     function sliderRight (){
@@ -35,8 +34,6 @@ function blog() {
             setNextSlide("0%");
         }
     }
-    
- 
 
   return (
     <>
@@ -61,16 +58,16 @@ function blog() {
               <div className={styles.pagewraper} style = {{marginLeft: nextSlide}}>
 
                 {/* last page */}
-                <div className={styles.lastPage}>
+                <section className={styles.lastPage}>
 
-                    {/* post 6 */}
-                  <div className={styles.post}>
+                    {/* post 12 */}
+                  <section className={styles.post}>
                     <Image
                         width={380}
-                        hei=  {300}
-                        src = {postImage1}
+                        height={300}
+                        src={postImage1}
                         title='Picking up damaged car'
-                        alt="picking up and removing damaged cars"
+                        alt="junk car removal services"
                         />
                       <Link  href={'/blog/post12'}>
                         <h3 className={styles.title}>
@@ -84,16 +81,16 @@ function blog() {
                           <Link href={"/blog/post12"}> Read More</Link>
                       </p>
                       <p className={styles.date}>14 Feb 2023</p>
-                  </div>
+                  </section>
 
                     {/* post 11 */}
-                  <div className={styles.post}>
+                  <section className={styles.post}>
                     <Image
                         width={380}
-                        hei=  {300}
-                        src = {postImage1}
+                        height={300}
+                        src={postImage1}
                         title='Picking up damaged car'
-                        alt="picking up and removing damaged cars"
+                        alt="cars in bad damaged condition"
                         />
                       <Link href={'/blog/post11'}>
                         <h3 className={styles.title}>
@@ -107,17 +104,16 @@ function blog() {
                         <Link href={"/blog/post11"}> Read More</Link>
                       </p>
                       <p className={styles.date}>14 Feb 2023</p>
-                  </div>
-
+                  </section>
 
                     {/* post 10 */}
-                  <div className={styles.post}>
+                  <section className={styles.post}>
                     <Image
                         width={380}
-                        hei=  {300}
-                        src = {postImage1}
+                        height={300}
+                        src={postImage1}
                         title='Picking up damaged car'
-                        alt="picking up and removing damaged cars"
+                        alt="selling junk cars laws"
                         />
                       <Link href={'/blog/post10'}>
                         <h3 className={styles.title}>
@@ -131,17 +127,16 @@ function blog() {
                           <Link href={"/blog/post10"}> Read More</Link>
                       </p>
                       <p className={styles.date}>14 Feb 2023</p>
-                  </div>
-
+                  </section>
 
                   {/* post 9 */}
-                  <div className={styles.post}>
+                  <section className={styles.post}>
                     <Image
                         width={380}
-                        hei=  {300}
+                        height={300}
                         src = {postImage3}
                         title='Picking up damaged car'
-                        alt="picking up and removing damaged cars"
+                        alt="cash for old car"
                         />
                       <Link href={'/blog/post9'}>
                         <h3 className={styles.title}>
@@ -155,16 +150,16 @@ function blog() {
                         <Link href={"/blog/post9"}> Read More</Link>
                       </p>
                       <p className={styles.date}>14 Feb 2023</p>
-                  </div>
+                  </section>
 
                   {/* post 8 */}
-                  <div className={styles.post}>
+                  <section className={styles.post}>
                     <Image
                         width={380}
-                        hei=  {300}
+                        height={300}
                         src = {postImage2}
                         title='Picking up damaged car'
-                        alt="picking up and removing damaged cars"
+                        alt="receiving payment for damaged cars"
                         />
                       <Link href={'/blog/post8'}>
                         <h3 className={styles.title}>
@@ -178,16 +173,16 @@ function blog() {
                       <Link href={"/blog/post8"}> Read More</Link>
                       </p>
                       <p className={styles.date}>17 Feb 2023</p>
-                  </div>
+                  </section>
 
                   {/* post7 */}
-                  <div className={styles.post}>
+                  <section className={styles.post}>
                     <Image
                         width={380}
-                        hei=  {300}
+                        height={300}
                         src = {postImage1}
                         title='Picking up damaged car'
-                        alt="picking up and removing damaged cars"
+                        alt="selling damaged cars"
                         />
                       <Link href={'/blog/post7'}>
                         <h3 className={styles.title}>
@@ -201,22 +196,22 @@ function blog() {
                         <Link href={"/blog/post7"}> Read More</Link>
                       </p>
                       <p className={styles.date}>14 Feb 2023</p>
-                  </div>
+                  </section>
 
                     <p>Page 1</p>
-                </div>
+                </section>
 
                 {/* page 2 */}
-                <div className={styles.pages}>
+                <section className={styles.pages}>
 
                     {/* post 6 */}
-                  <div className={styles.post}>
+                  <section className={styles.post}>
                     <Image
                         width={380}
-                        hei=  {300}
+                        height={300}
                         src = {postImage6}
                         title='Picking up damaged car'
-                        alt="picking up and removing damaged cars"
+                        alt="sell flood-damaged cars legally"
                         />
                       <Link href={'/blog/post6'}>
                         <h3 className={styles.title}>
@@ -224,22 +219,22 @@ function blog() {
                         </h3>
                       </Link>
                       <p className={styles.text}>
-                        (<Link className={Global.link} href={'/'}>AUX Cash for Car Sydney</Link>) is one of the biggest and most active car removal 
-                        across Sydney NWS. Don’t be worried, (<Link className={Global.link} href={'/'}>AUX Cash for Car Sydney</Link>) has made it 
+                        (<Link className={Sharing.link} href={'/'}>AUX Cash for Car Sydney</Link>) is one of the biggest and most active car removal 
+                        across Sydney NWS. Don’t be worried, (<Link className={Sharing.link} href={'/'}>AUX Cash for Car Sydney</Link>) has made it 
                         easy for you to be rid of your old car to get a good amount of
                         <Link href={"/blog/post6"}> Read More</Link>
                       </p>
                       <p className={styles.date}>14 Feb 2023</p>
-                  </div>
+                  </section>
 
                     {/* post 5 */}
-                  <div className={styles.post}>
+                  <section className={styles.post}>
                     <Image
                         width={380}
-                        hei=  {300}
+                        height={300}
                         src = {postImage5}
                         title='Picking up damaged car'
-                        alt="picking up and removing damaged cars"
+                        alt="life span of a car"
                         />
                       <Link href={'/blog/post5'}>
                         <h3 className={styles.title}>
@@ -253,17 +248,16 @@ function blog() {
                         <Link href={"/blog/post5"}> Read More</Link>
                       </p>
                       <p className={styles.date}>14 Feb 2023</p>
-                  </div>
-
+                  </section>
 
                     {/* post 4 */}
-                  <div className={styles.post}>
+                  <section className={styles.post}>
                     <Image
                         width={380}
-                        hei=  {300}
+                        height={300}
                         src = {postImage4}
                         title='Picking up damaged car'
-                        alt="picking up and removing damaged cars"
+                        alt="finding a reliable byer"
                         />
                       <Link href={'/blog/post4'}>
                         <h3 className={styles.title}>
@@ -278,17 +272,16 @@ function blog() {
                         <Link href={"/blog/post4"}> Read More</Link>
                       </p>
                       <p className={styles.date}>14 Feb 2023</p>
-                  </div>
-
+                  </section>
 
                   {/* post 3 */}
-                  <div className={styles.post}>
+                  <section className={styles.post}>
                     <Image
                         width={380}
-                        hei=  {300}
+                        height={300}
                         src = {postImage3}
                         title='Picking up damaged car'
-                        alt="picking up and removing damaged cars"
+                        alt="value of used car"
                         />
                       <Link href={'/blog/post3'}>
                         <h3 className={styles.title}>
@@ -302,16 +295,16 @@ function blog() {
                         <Link href={"/blog/post3"}> Read More</Link>
                       </p>
                       <p className={styles.date}>14 Feb 2023</p>
-                  </div>
+                  </section>
 
                   {/* post 2 */}
-                  <div className={styles.post}>
+                  <section className={styles.post}>
                     <Image
                         width={380}
-                        hei=  {300}
+                        height={300}
                         src = {postImage2}
                         title='Picking up damaged car'
-                        alt="picking up and removing damaged cars"
+                        alt="replace your old car"
                         />
                       <Link href={'/blog/post2'}>
                         <h3 className={styles.title}>Cars to Get Rid of: Signs you need a replacement one</h3>
@@ -323,16 +316,16 @@ function blog() {
                         <Link href={"/blog/post2"}> Read More</Link>
                       </p>
                       <p className={styles.date}>17 Feb 2023</p>
-                  </div>
+                  </section>
 
                   {/* post1 */}
-                  <div className={styles.post}>
+                  <section className={styles.post}>
                     <Image
                         width={380}
-                        hei=  {300}
+                        height={300}
                         src = {postImage1}
                         title='Picking up damaged car'
-                        alt="picking up and removing damaged cars"
+                        alt="who buys broken-down cars"
                         />
                       <Link href={'/blog/post1'}>
                         <h3 className={styles.title}>
@@ -347,13 +340,10 @@ function blog() {
                       </p>
                       
                       <p className={styles.date}>14 Feb 2023</p>
-                  </div>
-                  
+                  </section>
                     <p>Page 2</p>
-                </div>
+                </section>
               
-
-
             </div>
             <div className={styles.buttons}>
               <p className={styles.backBtn} onClick = {sliderRight}><MdNavigateBefore /></p>

@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import Message from '@/components/Message'
 import styles from '@/styles/Question.module.css'
-import Global from '@/styles/Global.module.css'
+import Sharing from '@/styles/Sharing.module.css'
 
 function question5() {
   return (
@@ -31,8 +31,8 @@ function question5() {
               vehicle without a title.
             </p>
             <p>
-              <Link href={'/'} className={Global.link}>Our company</Link> will take care of all the paperwork if you decide to sell your 
-              car without a title. We will also have to walk through the <Link href={'/HowItWorks'} className={Global.link}>process</Link> of 
+              <Link href={'/'} className={Sharing.link}>Our company</Link> will take care of all the paperwork if you decide to sell your 
+              car without a title. We will also have to walk through the <Link href={'/HowItWorks'} className={Sharing.link}>process</Link> of 
               transferring ownership properly. You will therefore receive a lower final 
               offer than if someone else tried to sell the vehicle with a title.
             </p>

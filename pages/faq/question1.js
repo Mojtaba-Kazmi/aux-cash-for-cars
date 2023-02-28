@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import Message from '@/components/Message'
 import styles from '@/styles/Question.module.css'
-import Global from '@/styles/Global.module.css'
+import Sharing from '@/styles/Sharing.module.css'
 
 function question1() {
   const content = 'Trusted Seller, Providing cash payments, No worries about your vehicle’s condition, sell your car to a trusted car buyer today! ';
@@ -23,7 +23,7 @@ function question1() {
       <div className={styles.questionL}>
         <div className={styles.questionContainer}>
             <h1>Why should I choose AUX Cash for Car?</h1>
-            <p>The following are some reasons why you should choose <Link className={Global.link} href={'/about'}>AUX Cash for Car</Link>. </p>
+            <p>The following are some reasons why you should choose <Link className={Sharing.link} href={'/about'}>AUX Cash for Car</Link>. </p>
             <p>
               <b>Trusted sellers: </b>
               We’ve been in the used car market for decades now. We have one of the most impressive
@@ -36,7 +36,7 @@ function question1() {
             </p>
             <p>
               <b>Providing cash payments: </b>
-              One of the most valuable things you will get when selling your car to <Link className={Global.link} href={'/'}>AUX Cash for Car </Link>
+              One of the most valuable things you will get when selling your car to <Link className={Sharing.link} href={'/'}>AUX Cash for Car </Link>
               is receiving cash payments. Our team understands all the hassle you could run through 
               when selling your vehicle to strangers who ask you to pay through third-party accounts 
               that might belong to them.
@@ -46,13 +46,13 @@ function question1() {
             <p>
               <b>No worries about your vehicle’s condition: </b>
               Have you tried selling a damaged car on classified websites? No one will be interested 
-              in buying it! However, by choosing <Link className={Global.link} href={'/'}>AUX Cash for Car</Link>, there is no problem as we accept 
+              in buying it! However, by choosing <Link className={Sharing.link} href={'/'}>AUX Cash for Car</Link>, there is no problem as we accept 
               your vehicle no matter what type or condition.
               We see value in every car.
             </p>
             <p>
               <b>Don’t delay; sell your car to a trusted car buyer today!: </b>
-              Are you ready to get rid of your car today? Why don’t you reach out to <Link className={Global.link} href={'/'}>AUX Cash for Car</Link> and  
+              Are you ready to get rid of your car today? Why don’t you reach out to <Link className={Sharing.link} href={'/'}>AUX Cash for Car</Link> and  
               check out your instant offer? It is free and fast! Give it a try!
               We compare your car to the most recent transactions in your area. We decide on how much 
               you'll get depending on the vehicle's type, condition, and whether you have a title or not.

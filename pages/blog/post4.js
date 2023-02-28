@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 import Massage from "@/components/Message"
 import styles from '@/styles/BlogsPosts.module.css'
-import Global from '@/styles/Global.module.css';
+import Sharing from '@/styles/Sharing.module.css';
 
 import postImage from '@/public/images/old-car.jpg'
 import Link from 'next/link'
@@ -44,10 +44,10 @@ function post4() {
         <div className={styles.imageContainer}>
           <Image
           width={1000}
-          hei=  {1000}
+          height={1000}
           src = {postImage}
           title='Picking up damaged car'
-          alt="picking up and removing damaged cars"
+          alt="finding a reliable byer"
           />
         </div>
         <h1 className={styles.postTitle}>
@@ -90,15 +90,15 @@ function post4() {
               both happy with.
           </p>
           <p>
-            <Link className={Global.link} href={'/'}>AUX Cash for Car Sydney</Link> - <Link className={Global.link} href={'/'}>AUX Cash for Car Sydeny</Link> will be interested in 
+            <Link className={Sharing.link} href={'/'}>AUX Cash for Car Sydney</Link> - <Link className={Sharing.link} href={'/'}>AUX Cash for Car Sydeny</Link> will be interested in 
             purchasing your car, even if it’s not the same make as the ones they sell. 
           </p>
           <div className={styles.date}>
               <p>17 Feb 2023</p>
           </div>
-          <div className={Global.flex}>
+          <div className={Sharing.flex}>
             <div className={styles.backButton} ><Link href={"/blog"}>Go Back</Link></div>
-            <div className={Global.socialIconBox}>
+            <div className={Sharing.socialIconBox}>
                   <FacebookShareButton
                     url={'/blog/post4'}
                     quote={"First, find a buyer who is actually interested in your car. Next, get your car in tip-top shape before you sell it. Usually, there's always a chance that a buyer will try to lowball you on the price"}

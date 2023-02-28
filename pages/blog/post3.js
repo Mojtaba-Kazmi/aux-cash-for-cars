@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 import Massage from "@/components/Message"
 import styles from '@/styles/BlogsPosts.module.css'
-import Global from '@/styles/Global.module.css'
+import Sharing from '@/styles/Sharing.module.css'
 
 import postImage from '@/public/images/cars.jpg'
 import Link from 'next/link'
@@ -48,10 +48,10 @@ function post3() {
         <div className={styles.imageContainer}>
           <Image
           width={1000}
-          hei=  {1000}
+          height={1000}
           src = {postImage}
           title='Picking up damaged car'
-          alt="picking up and removing damaged cars"
+          alt="value of used car"
           />
         </div>
         <h1 className={styles.postTitle}>
@@ -97,9 +97,9 @@ function post3() {
           <div className={styles.date}>
               <p>14 Feb 2023</p>
           </div>
-          <div className={Global.flex}>
+          <div className={Sharing.flex}>
             <div className={styles.backButton} ><Link href={"/blog"}>Go Back</Link></div>
-            <div className={Global.socialIconBox}>
+            <div className={Sharing.socialIconBox}>
                   <FacebookShareButton
                     url={'/blog/post3'}
                     quote={"There are a number of factors that can influence the value of a used car, from its make and model to its age and mileage. In addition, the value of a used car can vary depending on whether you're selling it to a dealer, a private party, or trade it in as part of a new car purchase."}

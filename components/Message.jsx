@@ -5,7 +5,7 @@ function Message() {
   return (
     <div className={styles.massageContainer}>
       <h3>Send us a message</h3>
-      <form action='https://formspree.io/f/mknaoepd' method="POST" className={styles.form}>
+      <form action='https://formspree.io/f/meqwkezw' method="POST" className={styles.form}>
 
             <div className={styles.names}>
               <div>

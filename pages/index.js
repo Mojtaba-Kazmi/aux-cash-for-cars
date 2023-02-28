@@ -11,7 +11,7 @@ import Services from '@/pages/services'
 import Message from '@/components/Message'
 import Number from '@/components/Number'
 import styles from '@/styles/Home.module.css'
-import Global from '@/styles/Global.module.css'
+import Sharing from '@/styles/Sharing.module.css'
 
 
 // import of images
@@ -22,8 +22,6 @@ import recyclersPic from '@/public/images/professional.png'
 //import of react icons
 import { IoLocationSharp } from "react-icons/io5";
 import { UilUsdCircle, UilFileAlt,UilBill } from '@iconscout/react-unicons';
-
-// const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -42,9 +40,10 @@ export default function Home() {
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap"rel="stylesheet"/>
       </Head>
+      
       <Slide />
       {/* how we work start */}
-      <div className={styles.howItWorks}>
+      <section className={styles.howItWorks}>
                 <h1>How we work?</h1>
                 
                 <div className={styles.option}>
@@ -55,8 +54,8 @@ export default function Home() {
                     <div className={styles.p}>
                         <h2>Get Price</h2>
                         <p>
-                            The car owner <Link className={Global.link} href={'/contact'}>contact</Link>s to <Link className={Global.link} href={'/'}>our company</Link> and provides information about their vehicle, such as its make, model, year, mileage, and overall condition.<br/>
-                            <Link className={Global.link} href={'/'}>AUX Cash for Car</Link> company evaluates the vehicle and makes an offer to the owner based on its estimated value. The offer may be based on factors such as the car's market demand, condition, and any needed repairs.
+                            The car owner <Link className={Sharing.link} href={'/contact'}>contact</Link>s to <Link className={Sharing.link} href={'/'}>our company</Link> and provides information about their vehicle, such as its make, model, year, mileage, and overall condition.<br/>
+                            <Link className={Sharing.link} href={'/'}>AUX Cash for Car</Link> company evaluates the vehicle and makes an offer to the owner based on its estimated value. The offer may be based on factors such as the car's market demand, condition, and any needed repairs.
                         </p>
                     </div>
                 </div>
@@ -79,7 +78,7 @@ export default function Home() {
                     </div>
                     <div className={styles.p}>
                         <h2>Get paid & we pick up</h2>
-                        Cash Payment: <Link className={Global.link} href={'/'}>Our company</Link> will pay you in cash for your vehicle. This is the most straightforward payment method and allows you to get your money immediately.
+                        Cash Payment: <Link className={Sharing.link} href={'/'}>Our company</Link> will pay you in cash for your vehicle. This is the most straightforward payment method and allows you to get your money immediately.
                     </div>
                 </div>
 
@@ -87,21 +86,21 @@ export default function Home() {
                     <button className={styles.button}>Contact Now</button>
                 </Link>
             
-        </div>
+      </section>
         {/* how we work start */}
 
       <About />
 
       {/* our valu start */}
-      <div className={styles.our_value_contianer}>
+      <section className={styles.our_value_contianer}>
 
         <div className={styles.our_value_s_l}>
         <div className={styles.image}>
             <Image
-            src={valuePic}
-            title='Picking up damaged car'
-            alt="picking up and removing damaged cars"
-            width={1000}
+              src={valuePic}
+              title='Picking up damaged car on a truck'
+              alt="a car on a truck ready to pick-up"
+              width={1000}
             />
         </div>
 
@@ -161,13 +160,13 @@ export default function Home() {
                 solutions to achieve the best possible outcome for the future.
            </p>
     </div>
-      </div>
+      </section>
       {/* our valu end */}
 
       <Services className={styles.Services} />
 
       {/* Export start */}
-      <div className={styles.export_container}>
+      <section className={styles.export_container}>
       <div className={styles.export_s_l}>
         <h2>Industrial Scrap Metal Exports</h2>
         <p>
@@ -193,21 +192,21 @@ export default function Home() {
       <div className={styles.export_s_r}>
              <Image 
              src={exportPic}
-             alt = ""
+             alt = " "
              width={1000} 
              />
       </div>
-      </div>
+      </section>
       {/* export end */}
 
       {/* Recyclers Start ---------------------------------------- */}
-      <div className={styles.recyclers_contianer}>
+      <section className={styles.recyclers_contianer}>
         <div className={styles.recyclers_s_l}>
           <Image 
-                  src={recyclersPic}
-                  alt = ""
-                  width={500} 
-                  />
+            src={recyclersPic}
+            alt = " "
+            width={500} 
+          />
         </div>
         <div className={styles.recyclers_s_r}>
               <p>
@@ -219,37 +218,28 @@ export default function Home() {
               </h2>
               <p>
                   <span>
-                     (<Link className={Global.link} href={'/'}>AUX Cash for Car Sydney</Link>) is one of the biggest and most active car 
+                     (<Link className={Sharing.link} href={'/'}>AUX Cash for Car Sydney</Link>) is one of the biggest and most active car 
                      removals in Sydney, Queensland that gives you the good, save, and 
                      satisfying service and offers you the highest prices and cash for 
                       your unwanted cars that can go up to $9999. 
                   </span>
                     We collect and recycle all types of scrap metals and car including 
                     scrap cars, buses, tracks, 4x4s, So, if you have a car or any other 
-                    kind of metal, (<Link className={Global.link} href={'/'}>AUX Cash for Car Sydney</Link>) will come and collect your 
+                    kind of metal, (<Link className={Sharing.link} href={'/'}>AUX Cash for Car Sydney</Link>) will come and collect your 
                     unwanted vehicle for free_ and will offer you cash for your unwanted vehicle.  
               </p>
           
         </div>
 
-      </div>
+      </section>
       {/* Recyclers end -------------------------------------------------*/}
       
-      
       {/* Contact us start -------------------------------------------------*/}
-      <div className={styles.contactUsContainer}>
-        <div>
-
-            <h2>
-              Contact us
-            </h2>
-            <p>
-              <Link className={Global.link} href={'/'}>AUX Cash for Car</Link> is One Of Leading Cash For Scrap Cars, Located 
-              In  Sydney.
-            </p>
+      <section className={styles.contactUsContainer}>
+            <h2>Contact us</h2>
+            <p><Link className={Sharing.link} href={'/'}>AUX Cash for Car</Link> is One Of Leading Cash For Scrap Cars, Located In  Sydney.</p>
             <div className={styles.itemsContainer}>
                 
-
                   <div className={styles.contactItems}>
                       <div className={styles.contactAdress}>
                       <span><IoLocationSharp /></span>
@@ -265,8 +255,7 @@ export default function Home() {
                     <Message />
                   </div>
             </div>
-          </div>
-      </div>
+      </section>
       {/* Contact us end -------------------------------------------------*/}
 
     </>
